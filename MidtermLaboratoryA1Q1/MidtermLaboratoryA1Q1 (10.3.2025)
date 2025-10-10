@@ -8,38 +8,39 @@ int main() {
 
     do {
         printf("\nWhat do you want to purchase?:\n");
-        printf("Vegetable (₱54.5/kg) = ₱55");
+        printf("Vegetable (54.5/kg) = ");
         scanf("%f", &vegQty);
 
-        printf("Fruits (₱120-150/kg, avg ₱135) = ₱140");
+       
+        printf("Fruits (120-150/kg) =");
         scanf("%f", &fruitQty);
-
-        printf("Milk (₱90/pack) = ₱90");
+        
+        printf("Milk (90/pack) =");
         scanf("%f", &milkQty);
-
-        printf("Soap (₱29.45/bar) = ₱30");
+        
+        printf("Soap (29.45/bar) =");
         scanf("%f", &soapQty);
-
-        printf("Shampoo and Conditioner (₱140/bottle) = ₱150");
+        
+        printf("Shampoo and Conditioner (140/bottle) =");
         scanf("%f", &shampooQty);
         
         total = (vegQty * vegPrice) + (fruitQty * fruitPrice) +
                 (milkQty * milkPrice) + (soapQty * soapPrice) +
                 (shampooQty * shampooPrice);
 
-        printf("\nTotal purchase:₱465 ₱%.2f\n", total);
+        printf("\nTotal purchase: 465 %.2f\n", total);
 
-        printf("Enter your cash: ₱500");
+        printf("Enter your cash:");
         scanf("%f", &cash);
 
-        if (cash >= total) {
+    if (cash >= total) {
             change = cash - total;
-            printf("Your change: ₱35 ₱%.2f\n", change);
-        } else {
-            printf("Insufficient funds! You need ₱%.2f more.\n", total - cash);
+            printf("Your change: %.2f\n", change);
+      }  else {
+            printf("Insufficient funds! You need %.2f more.\n", total - cash);
         }
 
-        printf("Do you want to purchase again (Y/N)? No add On's, that's all");
+        printf("Do you want to purchase again (Y/N)?");
         scanf(" %c", &choice); // Notice the space before %c to consume newline
 
     } while (choice == 'Y' || choice == 'y');
