@@ -5,6 +5,7 @@ int main() {
 
 	for (i= 10; i < 100; i++) {
 		printf("%d\n", i);
+		printf("just indicate only 10-100: ");
 	}
 
 	return 0;
