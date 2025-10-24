@@ -3,7 +3,7 @@
 int main() {
     int num, i;
 
-    printf("Enter a number your suitable to print your dedicated multiplication table: ");
+    printf("Enter a number your suitable to print your dedicated number multiplication table: ");
     scanf("%d", &num);
 
     for (i = 1; i <= 10; i++) {
