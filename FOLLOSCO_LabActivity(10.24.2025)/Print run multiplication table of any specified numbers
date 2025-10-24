@@ -3,11 +3,9 @@
 int main() {
     int num, i;
 
-    // Ask user for a number
-    printf("Enter a number to print its multiplication table: ");
+    printf("Enter a number your suitable to print your dedicated multiplication table: ");
     scanf("%d", &num);
 
-    // For loop to print the multiplication table
     for (i = 1; i <= 10; i++) {
         printf("%d x %d = %d\n", num, i, num * i);
     }
