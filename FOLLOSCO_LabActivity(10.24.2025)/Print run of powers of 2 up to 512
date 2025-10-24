@@ -3,11 +3,12 @@
 int main() {
     
     int i;
-    int result = 2;  // Start with 2^0 = 1
+    int result = 2;  
 
     for (i = 0; result <= 512; i++) {
         printf("2^%d = %d\n", i, result);
-        result = result * 2;  // Multiply by 2 each time
+        result = result * 2;  
+        printf("runs of to 2-512: ");
     }
 
     return 0;
