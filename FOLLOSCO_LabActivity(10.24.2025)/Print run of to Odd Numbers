@@ -3,7 +3,6 @@
 int main() {
     int i;
 
-    // For loop print odd numbers from 10 to 30
     for (i = 0; i <= 10; i++) {
         if (i % 2 != 0) {
             printf("%d\n", i);
